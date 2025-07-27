@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THÔNG TIN LIÊN HỆ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fef9ef;
+      color: #fff;
+    }
+
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner-text {
+      text-align: center;
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .banner-text span:first-child {
+      display: block;
+      font-size: 1.6rem;
+      font-style: italic;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      text-shadow: 0 0 14px rgba(255, 255, 255, 0.9),
+                   0 0 28px rgba(255, 255, 255, 0.7);
+    }
+
+    .banner-text span:last-child {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.4),
+                   0 0 10px rgba(255, 255, 255, 0.25);
+    }
+
+    .contact-section {
+      width: 100%;
+      min-height: 90vh;
+      background-image: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px 80px;
+      box-sizing: border-box;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      padding: 14px 20px;
+      border-radius: 12px;
+      min-width: 240px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-item a {
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-item:hover i {
+      animation: glow 1.2s ease-in-out infinite alternate;
+    }
+
+    .contact-item a:hover {
+      transform: scale(1.08);
+    }
+
+    /* Hover màu chữ riêng từng dòng */
+    .contact-item.email a:hover {
+      color: #ff6b6b;
+    }
+
+    .contact-item.facebook a:hover {
+      color: #00acee;
+    }
+
+    .contact-item.youtube a:hover {
+      color: #ff4d4d;
+    }
+
+    .contact-item.tiktok a:hover {
+      color: #ff00cc;
+    }
+
+    .contact-item.tai-lieu a:hover {
+      color: #00e676;
+    }
+
+    .contact-item.gta5 a:hover {
+      color: #f39c12;
+    }
+
+    .contact-item i {
+      font-size: 1.5rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 6px rgba(255, 255, 255, 0.2); }
+      to   { text-shadow: 0 0 12px rgba(255, 255, 255, 0.8); }
+    }
+
+    @media (max-width: 600px) {
+      .contact-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="banner-text">
+      <span>CONTACT INFORMATION</span>
+      <span>THÔNG TIN LIÊN HỆ</span>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <div class="contact-list">
+
+      <div class="contact-item email">
+        <i class="fas fa-envelope" style="color:#ea4335;"></i>
+        <a href="mailto:dinhnhatnguyen0312@gmail.com">EMAIL</a>
+      </div>
+
+      <div class="contact-item facebook">
+        <i class="fab fa-facebook" style="color:#1877f2;"></i>
+        <a href="https://www.facebook.com/nguyen.inh.nhat.461409/about" target="_blank">FACEBOOK</a>
+      </div>
+
+      <div class="contact-item youtube">
+        <i class="fab fa-youtube" style="color:#ff0000;"></i>
+        <a href="https://www.youtube.com/@dinhnhat0312" target="_blank">YOUTUBE</a>
+      </div>
+
+      <div class="contact-item tiktok">
+        <i class="fab fa-tiktok" style="color:#ff0050;"></i>
+        <a href="https://www.tiktok.com/@dinhnhatni" target="_blank">TIKTOK</a>
+      </div>
+
+      <div class="contact-item tai-lieu">
+        <i class="fas fa-book" style="color:#34a853;"></i>
+        <a href="https://drive.google.com/drive/folders/12ZlQ2dfCRM8ltEhkYytZ4Zlhl_9ZfSHN?usp=drive_link" target="_blank">
+          TÀI LIỆU TIẾNG ANH
+        </a>
+      </div>
+
+      <div class="contact-item gta5">
+        <i class="fas fa-gamepad" style="color:#f39c12;"></i>
+        <a href="https://drive.google.com/drive/folders/1bowLkR8b_VgN5YPniMY_DMvjo674J0xK?usp=drive_link" target="_blank">
+          MACRO GTA5 ONLINE
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
